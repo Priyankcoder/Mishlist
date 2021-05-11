@@ -1,0 +1,16 @@
+<!-- //Poster, Title, Type, Year, imdbID -->
+<div>
+    <label for="search"></label>
+    <input type="search" id="search" [(ngModel)] = "title" placeholder="title">
+    <button (click)="searchMovie(title)" >Search</button>
+</div>
+<div *ngIf = "movies.length">
+    <ul>
+        <li *ngFor = "let movie of movies">
+            {{movie.Title}} {{movie.Type}} {{movie.Year}} {{movie.imdbID}}
+        </li>
+    </ul>
+</div>
+<div *ngIf = "error.length">
+    <strong>{{error}}</strong>
+</div>
