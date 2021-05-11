@@ -1,2 +1,20 @@
-<h1>{{title}}</h1>
-<app-home></app-home>
+<nb-layout>
+  <nb-layout-header fixed>
+    <div class = "navbar">
+      <h1>Mishlist</h1>
+        <nb-button-group filled>
+          <button nbButtonToggle routerLink="/">Search</button>
+          <button nbButtonToggle routerLink="/bookmarks">Bookmark</button>
+        </nb-button-group>
+    </div>
+  </nb-layout-header>
+
+  <nb-layout-column>
+    <h1>{{ title }}</h1>
+    <app-home></app-home>
+  </nb-layout-column>
+
+  <nb-layout-footer fixed>
+    <!-- Insert footer here -->
+  </nb-layout-footer>
+</nb-layout>

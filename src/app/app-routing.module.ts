@@ -5,7 +5,7 @@ import { BookmarkComponent } from './bookmark/bookmark.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'bookmark', component: BookmarkComponent },
+  { path: 'bookmarks', component: BookmarkComponent },
 ];
 
 @NgModule({

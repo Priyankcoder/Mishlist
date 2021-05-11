@@ -1,23 +1,44 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import {
+  NbLayoutModule,
+  NbThemeModule,
+  NbInputModule,
+  NbCardModule,
+  NbButtonModule,
+  NbTabsetModule,
+  NbActionsModule,
+  NbButtonGroupModule,
+  NbIconModule,
+  NbFormFieldModule,
+} from '@nebular/theme';
+import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { BookmarkComponent } from './bookmark/bookmark.component';
-import { FormsModule } from '@angular/forms'
+import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    BookmarkComponent
-  ],
+  declarations: [AppComponent, HomeComponent, BookmarkComponent],
   imports: [
+    BrowserAnimationsModule,
+    NbThemeModule.forRoot({ name: 'dark' }),
+    NbLayoutModule,
+    NbInputModule,
+    NbCardModule,
+    NbButtonModule,
+    NbTabsetModule,
+    NbActionsModule,
+    NbButtonGroupModule,
+    NbEvaIconsModule,
+    NbIconModule,
+    NbFormFieldModule,
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

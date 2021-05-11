@@ -9,36 +9,18 @@ import { BookmarksService } from '../bookmarks.service';
 })
 //Poster, Title, Imageurl, imdbID;
 export class HomeComponent implements OnInit {
+  // movies = this.movieService.movies;
+  // title = this.movieService.title;
+  // error = this.movieService.error;
   movies = [];
   title;
   error;
+  getMovies = this.movieService.getMovies;
   constructor(
-    private movieService: FetchMoviesService,
+    public movieService: FetchMoviesService,
     private bookmarkService: BookmarksService
   ) {}
-  searchMovie(title) {
-    this.movieService.getMovies(title).then((res) => {
-      if (!res.Search) {
-        this.error = 'Not Found';
-      } else {
-        this.error = '';
-        this.movies = res.Search;
-        console.log(this.movies);
-        for (let i = 0; i < this.movies.length; i++) {
-          this.movies[i].Bookmark = false;
-        }
-        for (let i = 0; i < this.movies.length; i++) {
-          const curMovie = this.movies[i];
-          this.bookmarkService.bookmarks.forEach((marked) => {
-            if (marked.imdbID == curMovie.imdbID) {
-              console.log(`${curMovie.title} present`)
-              this.movies[i].Bookmark = true;
-            }
-          });
-        }
-      }
-    });
-  }
+
   ngOnInit(): void {
     this.bookmarkService.getBookmarks();
   }
