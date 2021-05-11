@@ -1,12 +1,13 @@
 .navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 nb-button-group {
     display: flex;
     margin-left: auto;
-    margin-right: 5vw;
+    margin-right: 10vw;
 }
 button {
-    margin-left: "2vw";
+    margin-left: "5vw";
 }

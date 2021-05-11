@@ -21,4 +21,12 @@ export class BookmarksService {
     this.bookmarks.filter(item => item.imdbID != id);
     localStorage.setItem('bookmarks', JSON.stringify(this.bookmarks));
   }
+  toggleBookmarks(movieData) {
+    const marked = movieData.Bookmark;
+    if (!marked) {
+      this.setBookmarks(movieData);
+    } else {
+      this.removeBookmarks(movieData);
+    }
+  }
 }

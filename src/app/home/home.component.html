@@ -31,7 +31,7 @@
                         <div>Year: {{movie.Year}}</div>
                     </div>
                     <div class = "mark-icon col-6">
-                        <nb-icon icon="star" [class.marked] = "movie.Bookmark == true"></nb-icon>
+                        <nb-icon icon="star" (click) = "toggleBookmarks()" [class.marked] = "movie.Bookmark == true"></nb-icon>
                     </div>
                 </nb-card-footer>
             </nb-card>

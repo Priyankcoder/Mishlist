@@ -16,6 +16,7 @@ export class HomeComponent implements OnInit {
   title;
   error;
   getMovies = this.movieService.getMovies;
+  toggleBookmarks = this.bookmarkService.toggleBookmarks;
   constructor(
     public movieService: FetchMoviesService,
     private bookmarkService: BookmarksService

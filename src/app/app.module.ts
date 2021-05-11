@@ -19,8 +19,9 @@ import { HomeComponent } from './home/home.component';
 import { BookmarkComponent } from './bookmark/bookmark.component';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CollectionComponent } from './collection/collection.component';
 @NgModule({
-  declarations: [AppComponent, HomeComponent, BookmarkComponent],
+  declarations: [AppComponent, HomeComponent, BookmarkComponent, CollectionComponent],
   imports: [
     BrowserAnimationsModule,
     NbThemeModule.forRoot({ name: 'dark' }),
