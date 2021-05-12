@@ -1,9 +1,46 @@
+.stats {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 6vh 0px 3vh 0px;
+  flex-wrap: wrap;
+}
+
+.stats > div {
+  width: fit-content;
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  /* border: 2px solid #ff3d71;
+   */
+  color: #FF3D71;
+  align-self: center;
+  margin: 1vh 0px 1vh 0px;
+}
+
+.movie {
+  /* background-color: #ff3d71; */
+  /* background-color:coral; */
+    /* background-color:darkcyan; */
+    background-color: #337ab7;
+}
+.episode {
+  background-color:coral;
+}
+.series {
+  background-color:darkcyan;
+}
+
+/* .progress {
+  width: 100%;
+} */
 .marked {
     color: red;
 }
-/* img {
-    width: "400px";
-} */
+
 nb-card-body {
   padding: 0;
   overflow: hidden;
