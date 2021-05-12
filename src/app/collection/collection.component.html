@@ -1,1 +1,28 @@
-<p>collection works!</p>
+  <div *ngIf="movies.length" class="row">
+    <div class="col-md-3 col-sm-6" *ngFor="let movie of movies">
+      <!-- {{movie.Title}} {{movie.Type}} {{movie.Year}} {{movie.imdbID}} -->
+      <nb-card class="card">
+        <nb-card-header>{{ movie.Title }}</nb-card-header>
+        <nb-card-body class="card-body">
+          <!-- A nebula is an interstellar cloud of dust, hydrogen, helium and other
+                ionized gases. Originally, nebula was a name for any diffuse
+                astronomical object, including galaxies beyond the Milky Way. -->
+          <img src="{{ movie.Poster }}" class="img-frame" />
+        </nb-card-body>
+        <nb-card-footer class="card-footer row">
+            <h6>Type: {{ movie.Type }}</h6>
+            <h6>Year: {{ movie.Year }}</h6>
+          <div class="mark-icon col-6">
+            <nb-icon
+              icon="star"
+              (click)="toggleBookmarks(movie)"
+              [class.marked]="movie.Bookmark == true"
+            ></nb-icon>
+          </div>
+        </nb-card-footer>
+      </nb-card>
+    </div>
+    <div *ngIf="error.length">
+      <strong>{{ error }}</strong>
+    </div>
+  </div>

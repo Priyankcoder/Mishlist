@@ -1,1 +1,9 @@
-<p>bookmark works!</p>
+<div class = "container">
+  <div class="row">
+    <div class="col-4">Total Bookmarks {{ totalBookmarks }}</div>
+    <div class="col-4">Movies {{ movies }}</div>
+    <div class="col-4">Series {{ series }}</div>
+    <div class="col-4">Episodes {{episodes}}</div>
+  </div>
+  <app-collection [movies]="bookmarks"></app-collection>
+</div>

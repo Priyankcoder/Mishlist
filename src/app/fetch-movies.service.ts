@@ -24,14 +24,15 @@ export class FetchMoviesService {
           for (let i = 0; i < this.movies.length; i++) {
             this.movies[i].Bookmark = false;
           }
-          for (let i = 0; i < this.movies.length; i++) {
+          for (let i = 0; i < this.movies.length && this.bookmarkService.bookmarks; i++) {
             const curMovie = this.movies[i];
-            this.bookmarkService.bookmarks.forEach((marked) => {
-              if (marked.imdbID == curMovie.imdbID) {
-                console.log(`${curMovie.title} present`);
-                this.movies[i].Bookmark = true;
-              }
-            });
+              if (!this.bookmarkService.bookmarks.length) continue;
+                this.bookmarkService.bookmarks.forEach((marked) => {
+                  if (marked.imdbID == curMovie.imdbID) {
+                    console.log(`${curMovie.title} present`);
+                    this.movies[i].Bookmark = true;
+                  }
+                });
           }
         }
       });

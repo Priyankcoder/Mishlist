@@ -22,6 +22,7 @@
     "@angular/router": "~11.2.13",
     "@nebular/eva-icons": "7.0.0",
     "@nebular/theme": "^7.0.0",
+    "@swimlane/ngx-charts": "^18.0.0",
     "eva-icons": "^1.1.2",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",

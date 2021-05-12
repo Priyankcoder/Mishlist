@@ -1,13 +1,20 @@
-.navbar {
+nb-layout-header {
     display: flex;
+    width: 100vw;
     justify-content: space-between;
     align-items: center;
+    align-self: center;
 }
-nb-button-group {
+h1 {
+    margin-left: 10vw
+}
+.button-group {
     display: flex;
+    width: fit-content;
     margin-left: auto;
     margin-right: 10vw;
 }
-button {
-    margin-left: "5vw";
+#button {
+    width: auto;
+    margin-left: 20px;
 }

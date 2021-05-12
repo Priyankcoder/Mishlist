@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Farro", sans-serif;
+  font-family: "Girassol", cursive;
+  font-family: "Goblin One", cursive;
+  font-family: "Roboto", sans-serif;
+
+}
+
+h1, h2, h6, h5 {
+    margin: 0px;
+}

@@ -1,11 +1,9 @@
-<nb-layout>
-  <nb-layout-header fixed>
-    <div class = "navbar">
-      <h1>Mishlist</h1>
-        <nb-button-group filled>
-          <button nbButtonToggle routerLink="/">Search</button>
-          <button nbButtonToggle routerLink="/bookmarks">Bookmark</button>
-        </nb-button-group>
+<nb-layout class = "root">
+  <nb-layout-header>
+    <h1>Mishlist</h1>
+    <div class="button-group">
+      <button id = "button" nbButton status="danger" routerLink="/"><h6>Search</h6></button>
+      <button id = "button" nbButton status="danger" routerLink="/bookmarks"><h6>Bookmark</h6></button>
     </div>
   </nb-layout-header>
 
@@ -13,7 +11,5 @@
     <router-outlet></router-outlet>
   </nb-layout-column>
 
-  <nb-layout-footer fixed>
-    <!-- Insert footer here -->
-  </nb-layout-footer>
+  <nb-layout-footer fixed> </nb-layout-footer>
 </nb-layout>

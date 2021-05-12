@@ -1,27 +1,6 @@
-.marked {
-    color: red;
-}
-/* img {
-    width: "400px";
-} */
-
 .search-box {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 5vh;
-}
-nb-card-body {
-  padding: 0;
-  overflow: hidden;
-}
-
-.img-frame {
-  /* clip-path: inset(0 12% 15% 13%); */
-  object-fit: cover;
-  object-position: top;
-  width: 100%;
-  height: 30vh;
-  margin-left: 0px;
-  margin-right: 0px;
 }
