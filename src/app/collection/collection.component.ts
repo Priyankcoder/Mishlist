@@ -8,7 +8,7 @@ import { BookmarksService } from '../bookmarks.service';
 })
 export class CollectionComponent implements OnInit {
   @Input() movies;
-  error = '';
+  info;
   setBookmarks = this.bookmarkService.setBookmarks;
   removeBookmarks = this.bookmarkService.removeBookmarks;
   toggleBookmarks = this.bookmarkService.toggleBookmarks;
@@ -22,5 +22,6 @@ export class CollectionComponent implements OnInit {
 
   ngOnInit(): void {
     this.bookmarkService.getBookmarks();
+    this.info = this.movieService.info;
   }
 }

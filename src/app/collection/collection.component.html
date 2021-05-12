@@ -1,5 +1,5 @@
   <div *ngIf="movies.length" class="row">
-    <div class="col-md-3 col-sm-6" *ngFor="let movie of movies">
+    <div class="col-md-3 col-sm-6" *ngFor="let movie of info.movies">
       <!-- {{movie.Title}} {{movie.Type}} {{movie.Year}} {{movie.imdbID}} -->
       <nb-card class="card">
         <nb-card-header>{{ movie.Title }}</nb-card-header>
@@ -15,14 +15,14 @@
           <div class="mark-icon col-6">
             <nb-icon
               icon="star"
-              (click)="toggleBookmarks(movie)"
+              (click)="bookmarkService.toggleBookmarks(movie)"
               [class.marked]="movie.Bookmark == true"
             ></nb-icon>
           </div>
         </nb-card-footer>
       </nb-card>
     </div>
-    <div *ngIf="error.length">
-      <strong>{{ error }}</strong>
+    <div *ngIf="info.error.length">
+      <strong>{{ info.error }}</strong>
     </div>
   </div>

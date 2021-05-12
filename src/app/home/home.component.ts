@@ -12,17 +12,17 @@ export class HomeComponent implements OnInit {
   // movies = this.movieService.movies;
   // title = this.movieService.title;
   // error = this.movieService.error;
-  movies = [];
+  movies;
   title;
-  error;
-  getMovies = this.movieService.getMovies;
-  toggleBookmarks = this.bookmarkService.toggleBookmarks;
   constructor(
     public movieService: FetchMoviesService,
     private bookmarkService: BookmarksService
-  ) {}
+  ) {
+    this.movies = {}, this.title = "";
+  }
 
   ngOnInit(): void {
     this.bookmarkService.getBookmarks();
+    this.movies = this.movieService.info.movies;
   }
 }

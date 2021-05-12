@@ -14,10 +14,10 @@
         fieldSize="large"
       />
     </nb-form-field>
-    <button id = "button" nbButton status="danger" (click)="getMovies()"><h6>
+    <button id = "button" nbButton status="danger" (click)="movieService.getMovies(title)"><h6>
       Search
     </h6></button>
   </div>
   <!-- </div> -->
-  <app-collection [movies]="movies"></app-collection>
+  <app-collection [movies]="movieService.info.movies"></app-collection>
 </div>
