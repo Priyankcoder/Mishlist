@@ -7,8 +7,8 @@ import { BookmarksService } from './services/bookmarks.service';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'movie-app';
-  
+  title = 'Mislist';
+
   //Fetch Bookmarks from local storage on app initialisation
   constructor(private bookmarkService: BookmarksService) {}
   ngOnInit() {
