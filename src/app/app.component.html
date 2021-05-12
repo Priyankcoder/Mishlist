@@ -1,14 +1,22 @@
-<nb-layout class = "root">
-  <nb-layout-header>
+<nb-layout class="root">
+  <nb-layout-header fixed>
     <h1>Mishlist</h1>
     <div class="button-group">
-      <button id = "button" nbButton status="danger" routerLink="/"><h6>Search</h6></button>
-      <button id = "button" nbButton status="danger" routerLink="/bookmarks"><h6>Bookmark</h6></button>
+      <button id="button" nbButton status="danger" routerLink="/">
+        <h6>Search</h6>
+      </button>
+      <button id="button" nbButton status="danger" routerLink="/bookmarks">
+        <h6>Bookmark</h6>
+      </button>
     </div>
   </nb-layout-header>
   <nb-layout-column>
     <router-outlet></router-outlet>
   </nb-layout-column>
-
-  <nb-layout-footer fixed> </nb-layout-footer>
+  <nb-layout-footer  fixed>
+     <div class = "footer">
+        <strong>Made by Priyank |&nbsp;</strong
+      ><a href="https://github.com/Priyankcoder" ><nb-icon icon="github" status = "success"></nb-icon></a>
+     </div>
+  </nb-layout-footer>
 </nb-layout>

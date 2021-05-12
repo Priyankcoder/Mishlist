@@ -4,7 +4,9 @@ nb-layout-header {
     justify-content: space-between;
     align-items: center;
     align-self: center;
+    min-height: fit-content;
 }
+
 h1 {
     margin-left: 10vw
 }
@@ -18,5 +20,9 @@ h1 {
     width: 20vw;
     max-width: fit-content;
     margin-left: 20px; 
-
+}
+.footer {
+    display: flex;
+    width: auto;
+    font-size: 1.2rem;
 }
