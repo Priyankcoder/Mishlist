@@ -4,6 +4,7 @@
   align-items: center;
   margin-bottom: 10vh;
   margin-top: 3vh;
+  flex-wrap: wrap;
 }
 
 button {
@@ -17,4 +18,6 @@ button {
   justify-content: center;
   margin-top: 5vh;
   flex-wrap: wrap;
+  overflow-wrap: break-word;
+  text-overflow: clip;
 }
