@@ -1,4 +1,5 @@
 <div class="container">
+  <!-- Search Feature -->
   <div class="search-box">
     <nb-form-field>
       <nb-icon nbPrefix icon="search" pack="eva"></nb-icon>
@@ -22,5 +23,6 @@
       <h6>Search</h6>
     </button>
   </div>
+  <!-- Render search movie -->
   <app-collection [movies]="movieService.info.movies"></app-collection>
 </div>

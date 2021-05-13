@@ -1,10 +1,12 @@
 <div class="container">
+  <!-- Provide the stats  -->
   <div class="stats">
     <div>Total Bookmarks {{ bookmarkService.bookmarks.length }}</div>
     <div>Movies {{ bookmarkService.types["movie"].length }}</div>
     <div>Series {{ bookmarkService.types["series"].length }}</div>
     <div>Episodes {{ bookmarkService.types["episode"].length }}</div>
   </div>
+  <!-- Display the stats using progress bar -->
   <div class="progress">
     <div
       class="progress-bar movie"

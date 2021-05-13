@@ -14,6 +14,8 @@ export class BookmarkComponent implements OnInit {
     public bookmarkService: BookmarksService,
     private movieService: FetchMoviesService
   ) {}
+  
+  //This function provide the length for each type in progress bar
   setStyle(cnt) {
     const total = this.bookmarkService.bookmarks.length;
     let val = 0;
