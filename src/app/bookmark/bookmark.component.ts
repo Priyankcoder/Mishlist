@@ -27,10 +27,6 @@ export class BookmarkComponent implements OnInit {
     let styles = {
       width: val + '%',
     };
-    console.log(total);
-    console.log(val);
-    console.log(cnt);
-    console.log(styles);
     return styles;
   }
   ngOnInit(): void {}

@@ -16,7 +16,7 @@ export class BookmarksService {
     data.forEach(item => {
       this.types[item.Type].push(item); 
     });
-    console.log(data);
+    // console.log(data);
     this.bookmarks = data;
     return data;
   }
@@ -41,7 +41,7 @@ export class BookmarksService {
     const id = movieData.imdbID;
     console.log(id);
     this.bookmarks = this.bookmarks.filter(item => item.imdbID != id);
-    console.log(this.bookmarks);
+    // console.log(this.bookmarks);
     const type = movieData.Type;
     this.types[type] = this.types[type].filter(item => item.imdbID != id);
     localStorage.setItem('bookmarks', JSON.stringify(this.bookmarks));

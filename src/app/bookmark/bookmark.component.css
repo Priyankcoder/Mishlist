@@ -1,3 +1,12 @@
+.phrase {
+  display: flex;
+  width: 100%;
+  text-content: center;
+  justify-content: center;
+  margin-top: 5vh;
+  flex-wrap: wrap;
+}
+
 .stats {
   width: 100%;
   display: flex;
