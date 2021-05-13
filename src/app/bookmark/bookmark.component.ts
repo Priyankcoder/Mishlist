@@ -23,7 +23,7 @@ export class BookmarkComponent implements OnInit {
       val = (cnt * 100) / total;
     }
     let styles = {
-      'width': val + '%',
+      width: val + '%',
     };
     console.log(total);
     console.log(val);

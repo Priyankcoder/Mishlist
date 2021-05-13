@@ -14,7 +14,7 @@
   padding: 0px;
   font-size: 1.5rem;
   font-weight: 700;
-  color: #FF3D71;
+  color: #ff3d71;
   align-self: center;
   margin: 1vh 0px 1vh 0px;
 }
@@ -22,17 +22,17 @@
   margin-bottom: 10vh;
 }
 .movie {
-    background-color: #337ab7;
+  background-color: #337ab7;
 }
 .episode {
-  background-color:coral;
+  background-color: coral;
 }
 .series {
-  background-color:darkcyan;
+  background-color: darkcyan;
 }
 
 .marked {
-    color: red;
+  color: red;
 }
 
 nb-card-body {
@@ -43,11 +43,10 @@ nb-card-body {
 nb-card-header {
   display: flex;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
   height: 60px;
   font-size: 1.5rem;
   text-align: center;
-
 }
 
 .img-frame {

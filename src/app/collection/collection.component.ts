@@ -7,7 +7,6 @@ import { BookmarksService } from '../services/bookmarks.service';
   templateUrl: './collection.component.html',
   styleUrls: ['./collection.component.css'],
 })
-
 export class CollectionComponent implements OnInit {
   @Input() movies;
   info;

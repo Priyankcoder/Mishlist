@@ -1,6 +1,4 @@
-<!-- //Poster, Title, Type, Year, imdbID -->
 <div class="container">
-  <!-- <div class = "row justify-content-center" > -->
   <div class="search-box">
     <nb-form-field>
       <nb-icon nbPrefix icon="search" pack="eva"></nb-icon>
@@ -10,14 +8,19 @@
         id="search"
         [(ngModel)]="title"
         placeholder="Search"
-        fullWidth status="danger"
+        fullWidth
+        status="danger"
         fieldSize="large"
       />
     </nb-form-field>
-    <button id = "button" nbButton status="danger" (click)="movieService.getMovies(title)"><h6>
-      Search
-    </h6></button>
+    <button
+      id="button"
+      nbButton
+      status="danger"
+      (click)="movieService.getMovies(title)"
+    >
+      <h6>Search</h6>
+    </button>
   </div>
-  <!-- </div> -->
   <app-collection [movies]="movieService.info.movies"></app-collection>
 </div>

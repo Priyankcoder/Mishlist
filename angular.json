@@ -27,8 +27,7 @@
               "./node_modules/@nebular/theme/styles/prebuilt/dark.css",
               "src/styles.css"
             ],
-            "scripts": [
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -95,15 +94,11 @@
           }
         },
         "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
+          "builder": "@angular-eslint/builder:lint",
           "options": {
-            "tsConfig": [
-              "tsconfig.app.json",
-              "tsconfig.spec.json",
-              "e2e/tsconfig.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
             ]
           }
         },
@@ -122,5 +117,8 @@
       }
     }
   },
-  "defaultProject": "movie-app"
+  "defaultProject": "movie-app",
+  "cli": {
+    "defaultCollection": "@angular-eslint/schematics"
+  }
 }

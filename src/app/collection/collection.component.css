@@ -1,9 +1,7 @@
 .marked {
-    color: red;
+  color: red;
 }
-/* img {
-    width: "400px";
-} */
+
 nb-card-body {
   padding: 0;
   overflow: hidden;
@@ -12,15 +10,13 @@ nb-card-body {
 nb-card-header {
   display: flex;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
   height: 60px;
   font-size: 1.5rem;
   text-align: center;
-
 }
 
 .img-frame {
-  /* clip-path: inset(0 12% 15% 13%); */
   object-fit: cover;
   object-position: top;
   width: 100%;
@@ -38,10 +34,6 @@ nb-card-header {
   padding: 4px 0px;
   align-items: center;
 }
-/* 
-.movie-info {
-  margin-left: 2vw;
-} */
 
 nb-icon {
   font-size: 20px;

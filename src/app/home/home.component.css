@@ -1,11 +1,11 @@
 .search-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10vh;
-    margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10vh;
+  margin-top: 5vh;
 }
 
 button {
-    margin-left: 1vw;
+  margin-left: 1vw;
 }
