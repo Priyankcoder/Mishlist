@@ -3,9 +3,18 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 10vh;
-  margin-top: 5vh;
+  margin-top: 3vh;
 }
 
 button {
   margin-left: 1vw;
+}
+
+.phrase {
+  display: flex;
+  width: 100%;
+  text-content: center;
+  justify-content: center;
+  margin-top: 5vh;
+  flex-wrap: wrap;
 }
