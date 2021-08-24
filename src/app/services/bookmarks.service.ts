@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class BookmarksService {
-  //bookmarks store bookmarked movies data
+  //bookmarks store bookmarked items
   bookmarks = [];
   //types store information about bookmarked items
   types = {movie: [], series: [], episode: []}
